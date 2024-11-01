@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Editable Resume Builder </title>
+    <h1><center><font color="black"> Editable Resuume Builder </center></h1>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+    <form id="resume-form" method="get">
+            <h2><p> First Name:
+                 <input type="text" id="name" Name="First  Name"    size="15"   maxlength="30"  placeholder="Enter your first name" required>
+               </p> 
+               
+               
+               
+               <p>  Last Name:
+                 <input type="text" id="lastname" name="Last Name"  size="15" maxlength="30"
+                 placeholder="Enter your last name" required>       
+              </p>
+              
+              
+
+         <p> Email Id:
+                <input type="email" id="email" name="email" size="15" maxlength="30" placeholder="Enter your email" required>
+            </p>
+
+            
+
+            <p> Mobile Number:
+                <input type="number" id="phone" Name="Mobile number" size=" 15" maxlength="30" placeholder="Mobile Number" required>
+            </p>
+
+            
+
+            <p> Address:
+                <input type="text" id="address" Name="Address" size="15" maxlength="30" placeholder="Address" required>
+            </p>
+     
+     
+     <label for="education"> Education:</label>
+     <textarea id="education" placeholder="Enter your Education" rows="4" required> </textarea>
+
+     
+     <label for="experience"> Work Experience:</label>
+     <textarea id="experience" placeholder="Enter your experience" rows="4" required> </textarea>
+
+
+     <label for="skills"> Skills:</label>
+     <textarea id="skills" placeholder="Enter your skills" rows="4" required> </textarea>
+
+ 
+
+
+<button type="submit"> Generate Resume </button>
+            
+</h2>
+    </form>
+
+    <div id="resume-display" contenteditable="true">
+        
+    </div>
+        <script src="main.js"></script>
+
+
+
+
+
+</body>
+</html>
